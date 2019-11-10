@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dreamer.etelbarserver.MainActivity"
+    android:padding="16dp"
+    android:background="@color/colorBackgroundDarker">
+
+    <Button
+        android:id="@+id/addFoodButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_corner_button"
+        android:onClick="addFoodButtonClicked"
+        android:text="Étel hozzáadása"
+        android:textColor="@color/colorBackground"
+        android:layout_above="@id/viewOrdersButton"
+        />
+
+    <Button
+        android:id="@+id/viewOrdersButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_button"
+        android:onClick="viewOrdersClicked"
+        android:text="Rendelések kezelése"
+        android:textColor="@color/colorBackground"
+        android:layout_margin="4dp"
+        android:layout_above="@id/freeAllTablesButton"/>
+
+    <Button
+        android:id="@+id/freeAllTablesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_button"
+        android:onClick="freeAllTablesClicked"
+        android:text="Asztalok felszabadítása"
+        android:textColor="@color/colorBackground"
+        android:layout_margin="4dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
